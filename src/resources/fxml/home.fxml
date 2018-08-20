@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.lang.String?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="900.0" maxWidth="600.0" minHeight="900.0" minWidth="600.0" prefHeight="900.0" prefWidth="600.0" style="-fx-background-color:black;&#10;-fx-border-width:4px;&#10;-fx-border-color:gray;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="game.HomeController">
+  <children>
+    <Separator layoutX="14.0" layoutY="64.0" minHeight="4.0" prefHeight="4.0" prefWidth="572.0" style="-fx-border-color: blue ;&#10;-fx-border-width: 3 0 0 0 ;" />
+    <Label layoutX="185.0" layoutY="81.0" maxWidth="-1.0" prefHeight="40.0" prefWidth="230.0" text="Chain Reaction" textAlignment="LEFT" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="32.0" />
+      </font>
+    </Label>
+    <ChoiceBox fx:id="playerChoice" layoutX="31.0" layoutY="141.0" opacity="1.0" prefHeight="30.0" prefWidth="538.0" style="-fx-background-color: #ffffff;&#10;-fx-border-color: gray;&#10;-fx-border-width: 1 1 1 1 ;&#10;-fx-border-radius: 3;" value="2 Player Game">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="2 Player Game" />
+          <String fx:value="3 Player Game" />
+          <String fx:value="4 Player Game" />
+          <String fx:value="5 Player Game" />
+          <String fx:value="6 Player Game" />
+          <String fx:value="7 Player Game" />
+          <String fx:value="8 Player Game" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/logo.jpg" />
+      </image>
+    </ImageView>
+    <Label layoutX="73.0" layoutY="14.0" maxWidth="-1.0" prefHeight="40.0" prefWidth="230.0" text="Chain Reaction" textAlignment="LEFT" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="28.0" />
+      </font>
+    </Label>
+    <Button layoutX="99.0" layoutY="198.0" mnemonicParsing="false" onAction="#playSD" style="-fx-background-color: #333333;&#10;-fx-border-width: 0.5 0 0 0;&#10;-fx-border-color: #aaaaaa;&#10;-fx-background-radius: 0;&#10;" text="Play" textFill="WHITE">
+      <font>
+        <Font size="20.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button font="$x1" layoutX="185.0" layoutY="198.0" mnemonicParsing="false" onAction="#playHD" style="-fx-background-color: #333333;&#10;-fx-border-width: 0.5 0 0 0;&#10;-fx-border-color: #aaaaaa;&#10;-fx-background-radius: 0;&#10;" text="Play with HD Grid" textFill="WHITE" />
+    <Button font="$x1" layoutX="428.0" layoutY="742.0" mnemonicParsing="false" onAction="#openSettings" style="-fx-background-color: #333333;&#10;-fx-border-width: 0.5 0 0 0;&#10;-fx-border-color: #aaaaaa;&#10;-fx-background-radius: 0;&#10;" text="Player Settings" textFill="WHITE" />
+    <Label layoutX="34.0" layoutY="252.0" prefHeight="292.951171875" prefWidth="538.0" text="The objective of Chain Reaction is to take control of the board by eliminating your opponents' orbs. &#10;&#10;Players take it in turns to place their orbs in a cell. Once a cell has reached critical mass the orbs explode into the surrounding cells adding an extra orb and claiming the cell for the player. A player may only place their orbs in a blank cell or a cell that contains orbs of their own colour. As soon as a player loses all their orbs they are out of the game." textFill="WHITE" wrapText="true" />
+    <Button font="$x1" layoutX="393.0" layoutY="198.0" mnemonicParsing="false" onAction="#resume" style="-fx-background-color: #333333;&#10;-fx-border-width: 0.5 0 0 0;&#10;-fx-border-color: #aaaaaa;&#10;-fx-background-radius: 0;&#10;" text="Resume" textFill="WHITE" />
+  </children>
+</Pane>

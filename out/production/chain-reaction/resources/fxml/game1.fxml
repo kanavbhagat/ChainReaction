@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="root" maxHeight="900.0" maxWidth="600.0" minHeight="900.0" minWidth="600.0" prefHeight="900.0" prefWidth="600.0" style="-fx-background-color:black;&#10;-fx-border-width:4px;&#10;-fx-border-color:gray;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="game.Game1Controller">
+  <children>
+    <Separator layoutX="14.0" layoutY="64.0" minHeight="4.0" prefHeight="4.0" prefWidth="572.0" style="-fx-border-color: blue ;&#10;-fx-border-width: 3 0 0 0 ;" />
+    <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/logo.jpg" />
+      </image>
+    </ImageView>
+    <Label layoutX="73.0" layoutY="14.0" maxWidth="-1.0" prefHeight="40.0" prefWidth="197.0" text="Chain Reaction" textAlignment="LEFT" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="28.0" />
+      </font>
+    </Label>
+    <Button fx:id="undoB" onAction="#undo" layoutX="463.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color : black;&#10;" text="UNDO" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="15.0" />
+      </font>
+    </Button>
+    <MenuButton layoutX="552.0" layoutY="21.0" minWidth="26.00001220703126" mnemonicParsing="false" prefWidth="26.00001220703126" style="-fx-background-color : black;&#10;" text="^^" textFill="WHITE">
+      <items>
+          <MenuItem mnemonicParsing="false" onAction="#save" text="Save Game" />
+          <MenuItem mnemonicParsing="false" onAction="#restart" text="Restart Game" />
+          <MenuItem mnemonicParsing="false" onAction="#goHome" text="Exit Game" />
+      </items>
+    </MenuButton>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="179.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="179.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="179.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="179.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="179.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="179.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="259.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="259.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="259.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="259.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="259.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="259.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="339.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="339.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="339.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="339.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="339.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="339.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="419.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="419.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="419.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="419.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="419.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="419.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="499.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="499.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="499.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="499.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="499.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="499.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="579.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="579.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="579.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="579.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="579.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="579.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="659.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="659.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="659.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="659.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="659.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="659.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="60.0" layoutY="739.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="140.0" layoutY="739.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="220.0" layoutY="739.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="300.0" layoutY="739.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="380.0" layoutY="739.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="80.0" layoutX="460.0" layoutY="739.0" strokeType="INSIDE" width="80.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="159.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="159.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="159.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="159.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="159.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="159.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="244.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="244.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="244.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="244.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="244.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="244.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="329.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="329.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="329.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="329.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="329.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="329.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="414.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="414.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="414.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="414.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="414.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="414.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="499.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="499.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="499.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="499.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="499.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="499.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="584.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="584.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="584.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="584.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="584.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="584.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="669.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="669.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="669.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="669.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="669.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="669.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="45.0" layoutY="754.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="130.0" layoutY="754.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="215.0" layoutY="754.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="300.0" layoutY="754.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="385.0" layoutY="754.0" strokeType="INSIDE" width="85.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="85.0" layoutX="470.0" layoutY="754.0" strokeType="INSIDE" width="85.0" />
+    <Line endX="396.0" endY="-358.0" layoutX="140.0" layoutY="539.0" startX="413.0" startY="-378.0" strokeWidth="2.0" />
+    <Line endX="404.0" endY="288.0" layoutX="150.0" layoutY="549.0" startX="388.0" startY="270.0" strokeWidth="2.0" />
+    <Line endX="-116.0" endY="278.0" layoutX="162.0" layoutY="560.0" startX="-102.0" startY="257.0" strokeWidth="2.0" />
+    <Line endX="-113.0" endY="-392.0" layoutX="174.0" layoutY="571.0" startX="-127.0" startY="-411.0" strokeWidth="2.0" />
+    <Line endX="-345.0" endY="-25.0" layoutX="405.0" layoutY="284.0" startX="-359.0" startY="-41.0" strokeWidth="2.0" />
+    <Line endX="-125.0" endY="156.0" layoutX="185.0" layoutY="183.0" startX="-139.0" startY="145.0" strokeWidth="2.0" />
+    <Line endX="-125.0" endY="151.0" layoutX="185.0" layoutY="268.0" startX="-140.0" startY="146.0" strokeWidth="2.0" />
+    <Line endX="-124.0" endY="225.0" layoutX="184.0" layoutY="354.0" startX="-138.0" startY="229.0" strokeWidth="2.0" />
+    <Line endX="-124.0" endY="138.0" layoutX="185.0" layoutY="519.0" startX="-140.0" startY="150.0" strokeWidth="2.0" />
+    <Line endX="-138.0" endY="159.0" layoutX="184.0" layoutY="597.0" startX="-123.0" startY="142.0" strokeWidth="2.0" />
+    <Line endX="133.0" endY="-23.0" layoutX="405.0" layoutY="284.0" startX="149.0" startY="-41.0" strokeWidth="2.0" />
+    <Line endX="-139.0" endY="157.0" layoutX="677.0" layoutY="183.0" startX="-124.0" startY="146.0" strokeWidth="2.0" />
+    <Line endX="-138.0" endY="150.0" layoutX="677.0" layoutY="269.0" startX="-123.0" startY="144.0" strokeWidth="2.0" />
+    <Line endX="-124.0" endY="232.0" layoutX="678.0" layoutY="353.0" startX="-139.0" startY="225.0" strokeWidth="2.0" />
+    <Line endX="-124.0" endY="152.0" layoutX="678.0" layoutY="518.0" startX="-139.0" startY="140.0" strokeWidth="2.0" />
+    <Line endX="-124.0" endY="157.0" layoutX="678.0" layoutY="598.0" startX="-138.0" startY="141.0" strokeWidth="2.0" />
+    <Line endX="-263.0" endY="-103.0" layoutX="405.0" layoutY="284.0" startX="-275.0" startY="-124.0" strokeWidth="2.0" />
+    <Line endX="-50.0" endY="81.0" layoutX="269.0" layoutY="100.0" startX="-55.0" startY="59.0" strokeWidth="2.0" />
+    <Line endX="26.0" endY="81.0" layoutX="353.0" layoutY="99.0" startX="31.0" startY="61.0" strokeWidth="2.0" />
+    <Line endX="-58.0" endY="81.0" layoutX="518.0" layoutY="100.0" startX="-48.0" startY="60.0" strokeWidth="2.0" />
+    <Line endX="-469.0" endY="738.0" layoutX="599.0" layoutY="100.0" startX="-460.0" startY="718.0" strokeWidth="2.0" />
+    <Line endX="-49.0" endY="60.0" layoutX="269.0" layoutY="758.0" startX="-54.0" startY="81.0" strokeWidth="2.0" />
+    <Line endX="100.0" endY="49.0" layoutX="279.0" layoutY="768.0" startX="106.0" startY="70.0" strokeWidth="2.0" />
+    <Line endX="17.0" endY="51.0" layoutX="443.0" layoutY="767.0" startX="26.0" startY="72.0" strokeWidth="2.0" />
+    <Button layoutX="60.0" layoutY="179.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="179.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="179.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="179.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="179.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="179.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="60.0" layoutY="259.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="259.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="259.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="259.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="259.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="259.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="60.0" layoutY="341.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="341.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="341.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="341.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="341.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="341.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="60.0" layoutY="419.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="419.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="419.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="419.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="419.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="419.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="60.0" layoutY="499.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="499.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="499.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="499.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="499.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="499.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="60.0" layoutY="579.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="579.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="579.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="579.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="579.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="579.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="60.0" layoutY="659.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="659.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="659.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="659.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="659.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="659.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="60.0" layoutY="739.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="140.0" layoutY="739.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="220.0" layoutY="739.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="300.0" layoutY="739.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="380.0" layoutY="739.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+    <Button layoutX="460.0" layoutY="739.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#clk" />
+  </children>
+</Pane>

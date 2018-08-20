@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="250.0" maxWidth="550.0" minHeight="250.0" minWidth="550.0" prefHeight="250.0" prefWidth="550.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.PreferencesController">
+  <children>
+    <Label layoutX="34.0" layoutY="85.0" maxWidth="-1.0" prefHeight="40.0" prefWidth="197.0" text="Choose Color:" textAlignment="LEFT" textFill="#3385ff">
+      <font>
+        <Font name="Arial" size="28.0" />
+      </font>
+    </Label>
+    <Button layoutX="0.0" layoutY="200.0" mnemonicParsing="false" onAction="#cancelCol" prefHeight="49.951171875" prefWidth="275.0" style="-fx-background-radius: 0;&#10;-fx-background-color: #333333;&#10;-fx-border-width: 1 0.5 0 0;&#10;-fx-border-color: #999999;" text="Cancel" textFill="WHITE">
+      <font>
+        <Font size="20.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button font="$x1" layoutX="275.0" layoutY="200.0" mnemonicParsing="false" onAction="#okayCol" prefHeight="49.951171875" prefWidth="275.0" style="-fx-background-radius: 0;&#10;-fx-background-color: #333333;&#10;-fx-border-width: 1 0 0 0.5;&#10;-fx-border-color:#999999;" text="OK" textFill="WHITE" />
+    <ColorPicker fx:id="colorPicker" layoutX="261.0" layoutY="85.0" prefHeight="40.0" prefWidth="275.0" style="-fx-background-radius: 3;&#10;-fx-background-color: #999999;&#10;-fx-border-color: #999999;&#10;-fx-border-width: 0;&#10;-fx-fill: #3385ff;" />
+  </children>
+</Pane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:controller="game.WinnerController" maxHeight="250.0" maxWidth="550.0" minHeight="250.0" minWidth="550.0" prefHeight="250.0" prefWidth="550.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="96.0" layoutY="85.0" maxWidth="-1.0" prefHeight="40.0" prefWidth="358.0" text="CONGRATULATIONS!" textAlignment="LEFT" textFill="#3385ff">
+            <font>
+                <Font name="Arial" size="34.0" />
+            </font>
+        </Label>
+        <Button fx:id="okayButton" layoutY="200.0" mnemonicParsing="false" onAction="#okayCol" prefHeight="50.0" prefWidth="550.0" style="-fx-background-radius: 0;&#10;-fx-background-color: #333333;&#10;-fx-border-width: 1 0 0 0.5;&#10;-fx-border-color:#999999;" text="OK" textFill="WHITE">
+         <font>
+                <Font size="20.0" fx:id="x1" />
+         </font></Button>
+    </children>
+</Pane>
