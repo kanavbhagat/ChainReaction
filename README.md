@@ -1,2 +1,2 @@
 # chain-reaction
-Implementation of the popular game Chain Reaction using JavaFX as a course project.
+Implementation of a deterministic combinatorial game of perfect information called Chain Reaction using JavaFX.
