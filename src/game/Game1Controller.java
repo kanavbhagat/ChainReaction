@@ -199,6 +199,10 @@ public class Game1Controller {
             ix.toFront();
         }
     }
+    
+    private void newFunctinon(){
+        System.out.println("This function was created for hacktober fest");
+    }
 
     /**
      * Checks possibility of explosion for specified
